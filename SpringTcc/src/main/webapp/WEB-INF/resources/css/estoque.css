@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+body {
+	background-color: #f0f4f8;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: auto;
+}
+
+nav {
+	width: 100%;
+	background-color: #ff6b81;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.menu {
+	width: 100%;
+	background-color: #ffb3c1;
+	padding: 10px 0;
+	text-align: center;
+}
+
+.container {
+	background-color: white;
+	width: 90%;
+	max-width: 800px;
+	padding: 30px;
+	margin: 20px auto;
+	border-radius: 30px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+	color: black;
+}
+
+h2 {
+	color: black;
+	font-size: 25px;
+	font-weight: 700;
+	margin: 10px 0 20px 0;
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.label-input-container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.label-input-container label {
+	flex: 0 0 150px;
+	margin-right: 10px;
+}
+
+select#produto:focus, select#categoria:focus {
+	border-color: #ff6b81;
+	outline: none;
+}
+
+.label-input-container select, .label-input-container input[type="number"],
+	.label-input-container input[type="text"] {
+	flex: 1;
+	max-width: 200px;
+	height: 30px;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 15px;
+	background-color: #f9f9f9;
+}
+
+input[type=submit], button {
+	background-color: #d3d3d3;
+	color: black;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 20px;
+	font-size: 14px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s;
+	margin: 10px 15px;
+}
+
+.table_round {
+	width: 80%;
+	max-width: 800px;
+	margin: 0 auto;
+	border-collapse: collapse;
+	margin-top: 20px;
+	background-color: #fff;
+	font-size: 14px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	margin-top: 20px;
+
+}
+
+.table_round th, .table_round td {
+	border: 1px solid #dddddd;
+	padding: 8px;
+	text-align: center;
+}
+
+.table_round th {
+	background-color: #f2f2f2;
+	color: #333;
+	font-weight: bold;
+}
+
+.table_round tr:nth-child(even) {
+	background-color: #f9f9f9;
+}
+
+.table_round tr:hover {
+	background-color: #f1f1f1;
+}
+
+.table_round input[type="text"], .table_round input[type="number"] {
+	width: 50px;
+	padding: 5px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	
+}
+
+.table_round form {
+	display: inline;
+}
+
+.table_round input[type="submit"] {
+	color: #fff;
+	background-color: #4CAF50;
+	border-radius: 4px;
+	font-size: 12px;
+	width: 100px;
+	height: 40px;
+	font-weight: 400;
+	border: none;
+}
+
+.table_round input[type="submit"]:hover {
+	background-color: #45a049;
+}
+
+
+input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus,
+	select:focus {
+	border-color: #ff6b81;
+	outline: none;
+}
+
+input[type="text"], input[type="number"], input[type="date"], select {
+	border: 1px solid #ddd;
+	transition: border-color 0.3s;
+}
+div.erro {
+	color: #dc3545;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 15px;
+}
+
+div.sucesso {
+	color: #28a745;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 15px;
+}

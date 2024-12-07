@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+body {
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+nav {
+    width: 100%;
+    background-color: #ff6b81;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.menu {
+    width: 100%;
+    background-color: #ffb3c1;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    width: 50%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+h2 {
+    color: #4a4a4a;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #000;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+    background-color: transparent;
+}
+
+select {
+    width: 250px; /* Definindo a largura do campo do mês */
+    padding: 10px; /* Adicionando um pouco de padding */
+    border-radius: 20px; /* Estilo de borda para o select */
+    border: 1px solid #ddd; /* Borda padrão */
+}
+
+select:focus {
+    border-color: #ff6b81;
+    outline: none;
+}
+
+button {
+    padding: 8px 16px; /* Diminuindo o padding do botão */
+    background-color: #d3d3d3;
+    color: #333;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px; /* Diminuindo o tamanho da fonte do botão */
+    font-weight: normal; /* Removendo o negrito */
+    transition: background-color 0.3s ease, transform 0.2s;
+    margin-top: 10px; /* Adicionando margem superior para o botão */
+}
+
+.btn-consultar {
+    color: #000;
+}
+
+.table_produtos_vendidos {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table_produtos_vendidos th, .table_produtos_vendidos td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.table_produtos_vendidos th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+}
+
+.table_produtos_vendidos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table_produtos_vendidos tr:hover {
+    background-color: #f1f1f1;
+}
+
+div.erro {
+    color: #dc3545;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
+
+div.sucesso {
+    color: #28a745;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+}
